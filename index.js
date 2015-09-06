@@ -20,7 +20,7 @@ module.exports = function () {
 
         dtsm
             .createManager({
-                configPath: file.relative
+                configPath: file.path
             })
             .then(function (manager) {
                 return manager.installFromFile();
